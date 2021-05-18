@@ -1,0 +1,17 @@
+<div>
+    <form (ngSubmit)="addTask()">
+    <label for="Task Name">Task Name</label>
+
+    <input type="text" name="" id="taskName" required [(ngModel)]="newTask.taskName" [ngModelOptions]="{ standalone: true }" /> <br>
+
+    <label for="Task Due">Task Due</label>
+
+    <input type="text" name="" id="taskDue" required [(ngModel)]="newTask.taskDue" [ngModelOptions]="{ standalone: true }" /> <br>
+
+    <label for="Completed?">Completed</label>
+
+    <input type="text" name="" id="taskCompleted" required [(ngModel)]="newTask.taskCompleted" [ngModelOptions]="{ standalone: true }" /> <br>
+
+    <button id ="createNewTask">Create Task!</button>
+</form>
+</div>

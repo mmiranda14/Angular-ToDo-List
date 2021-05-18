@@ -1,0 +1,34 @@
+<!-- <div>
+    <h1>Task Detail</h1>
+    <h4>Name: {{taskDetail.taskName}}</h4>
+    <h4>When To Complete: {{taskDetail.taskDue}}</h4>
+    <h4>Is This Complete: {{taskDetail.taskCompleted}}</h4>
+</div>
+<div>
+    <h1>Delete Task:</h1>
+    <h4>(WARNING, CANNOT BE UNDONE!)</h4>
+    <button (click)="deleteTask(taskDetail.id)">Delete</button>
+</div> -->
+
+
+<div class="container">
+    <h2>Task Details</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Time to Complete</th>
+                <th>Completed?</th>
+                <th>Delete Task? <div class="text-danger">(WARNING, CANNOT BE UNDONE!)</div></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{taskDetail.taskName}}</td>
+                <td>{{taskDetail.taskDue}}</td>
+                <td>{{taskDetail.taskCompleted}}</td>
+                <td><button type="button" class="btn btn-danger btn-xs" (click)="deleteTask(taskDetail.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
